@@ -9,9 +9,8 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .top-page{
-    width: 1090px;
-    height: 520px;
-    margin: 50px 140px;
+    width: 1290px;
+    margin: 50px 40px;
     background-color: #161616;
     border-radius:30px;
     color:white;
@@ -20,7 +19,7 @@ body{
 }
 .title{
     margin-left: 100px;
-    margin-top: 40px;  
+    margin-top: 100px;  
 }
 h1{
     font-size: 8vh;
@@ -50,11 +49,9 @@ h1{
 }
 /* ---------- Match Section---------- */
 .continer{
-    width: 1090px;
     display: grid;
     grid-template-columns: 250px repeat(1, 1fr);
-    margin: 100px 140px;
-    gap: 30px;
+    margin: 50px 20px;
 }
 .upcoming-match{
     display: flex;
@@ -81,7 +78,7 @@ h1{
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
-#blog-blog{
+#matches{
     background-color: #FF9F29;
     color:white;
 }
@@ -90,39 +87,32 @@ h1{
     text-align: center;
     border: 1px solid lightgrey;
     border-radius: 10px;
-    padding-top: 50px;
+    padding: 30px 0;
 }
 .transfer .blog-images{
     width: 35%;
-    margin-bottom: 20px;
+    margin: 30px 20px;
 }
-.transfer p{
-    display: inline;
-    margin: 20px;
-}
+
 .match{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-h4, .blog-icon{
+h4{
     margin: 20px;
 }
 
-.blog-icon, span{
-    display: flex;
-    align-items: center;
-}
+
 /*----------------Footer----------- */
 footer{
-    height: 300px;
     background-color: #161616; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-h2,.information p{
+h2, hr,.information p{
     color: white;
 }
 hr{
@@ -143,20 +133,21 @@ hr{
     margin:30px;
 }
 /* ----------Mobile------------ */
- @media only screen and (max-width:688px){
-    .top-page, .container,.blogs{ 
+@media only screen and (max-width:688px){
+    .top-page, .container, .blogs{ 
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
+    h1{
+        font-size: 6vh;
+    }
+
     .title p{
         height: 50px;
-        width: 300px;
+        width: 200px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-    }
-    .upcoming-match{
-        flex-direction: row;
     }
     .information{
         flex-direction: column;
@@ -167,5 +158,8 @@ hr{
     .blogs{ 
         max-width: 100%;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .upcoming-match{
+        flex-direction: row;
     }
 }
