@@ -17,14 +17,11 @@ body{
     color:white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-   
 }
 .title{
     margin-left: 100px;
     margin-top: 40px;  
 }
-
-
 h1{
     font-size: 8vh;
     line-height: 1.2em;
@@ -64,8 +61,6 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 20px;
-    background-color:#161616;
     border-radius: 10px;
 }
 .upcoming-match a{
@@ -78,7 +73,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: gray;
     border-radius: 10px;
 }
 .blogs{
