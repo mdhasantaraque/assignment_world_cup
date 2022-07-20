@@ -130,13 +130,13 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
 }
 h2, hr, .information p{
     color: white;
 }
 hr{
-    width: 90%;  
+    width: 95%;  
 }
 .information{
     max-width: 800px; 
