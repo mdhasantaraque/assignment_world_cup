@@ -54,8 +54,7 @@ h1{
 .container{
     display: grid;
     grid-template-columns: 250px repeat(1, 1fr);
-    margin: 50px 20px;
-    
+    margin: 50px 20px; 
 }
 .upcoming-match{
     display: flex;
@@ -86,8 +85,12 @@ h1{
     background-color: #FF9F29;
     color:white;
 }
+#blog-blog{
+    background-image: linear-gradient(to right, black, transparent), url(images/Capture.PNG);
+    color:white ;
+    font-weight: 700;
+}
 .transfer{
-    height: 380px;
     border: 1px solid lightgrey;
     border-radius: 10px;
 }
@@ -104,6 +107,23 @@ h5, .blog-icon{
 .blog-icon, span{
     display: flex;
     align-items: center;
+}
+.audiance{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.viewer{
+    visibility: hidden;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #FF9F29;
+    width: 200px;
+    height: 60px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    font-weight: 500;
 }
 /*----------------Footer----------- */
 footer{
@@ -166,5 +186,8 @@ hr{
     }
     .upcoming-match{
         flex-direction: row;
+    }
+    .viewer{
+        visibility: visible
     }
 }

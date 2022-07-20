@@ -48,7 +48,7 @@ h1{
     width: 100%;
 }
 /* ---------- Match Section---------- */
-.continer{
+.container{
     display: grid;
     grid-template-columns: 250px repeat(1, 1fr);
     margin: 50px 20px;
@@ -82,8 +82,12 @@ h1{
     background-color: #FF9F29;
     color:white;
 }
+#blog-blog{
+    background-image: linear-gradient(to right, black, transparent), url(images/Capture.PNG);
+    color:white ;
+    font-weight: 700;
+}
 .transfer{
-    height: 230px;
     text-align: center;
     border: 1px solid lightgrey;
     border-radius: 10px;
@@ -102,7 +106,23 @@ h1{
 h4{
     margin: 20px;
 }
-
+.audiance{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.viewer{
+    visibility: hidden;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #FF9F29;
+    width: 200px;
+    height: 60px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    font-weight: 500;
+}
 
 /*----------------Footer----------- */
 footer{
@@ -155,11 +175,17 @@ hr{
 }    
 /* -----------Tablet----------- */
 @media only screen and (min-width:689px) and (max-width:992px){
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
     .blogs{ 
         max-width: 100%;
         grid-template-columns: repeat(2, 1fr);
     }
     .upcoming-match{
         flex-direction: row;
+    }
+    .viewer{
+        visibility: visible
     }
 }
